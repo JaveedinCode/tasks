@@ -14,7 +14,7 @@ void main() {
 
     if (username.isNotEmpty && password.isNotEmpty) {
     } else {
-      print("Xahiş edirik, istifadəçi adi və parol boş ola bilməz.");
+      print("Xahiş edirik, istifadəçi addldadi və parol boş ola bilməz.");
     }
   } else if (choice == 2) {}
 }
