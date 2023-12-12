@@ -9,7 +9,7 @@ void main() {
 
   while (true) {
     stdout.write('\nSechiminizi edin: (das/qaychi/kagiz)');
-    String oyuncuSecim = stdin.readLineSync()!.toLowerCase();
+    String oyuncuSecim = stdin.readLineSync().toString();
 
     if (sechimler.contains(oyuncuSecim)) {}
 
@@ -33,7 +33,7 @@ void main() {
 String muqayisEt(String oyuncuSecim, String komputerSecim) {
   if (oyuncuSecim == komputerSecim) {
     return 'Beraberlik';
-  } else if ((oyuncuSecim == 'das' && komputerSecim == 'qayçi') ||
+  } else if ((oyuncuSecim == 'das' && komputerSecim == 'qaychi') ||
       (oyuncuSecim == 'qaychi' && komputerSecim == 'kagiz') ||
       (oyuncuSecim == 'kagiz' && komputerSecim == 'das')) {
     return 'Oyuncu Qazandi';
